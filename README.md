@@ -6,3 +6,11 @@ HOME装箱单，装箱单，委托书，发票，财务统计等三期完成决�
 技术亮点：数据库用到了冗余设计和打断设计，跳跃查询，海量数据用POI来实现，项目中的图表和报表采用amCharts Flash实现，表现酷炫，使用简单
 
 环境和软件：IDEA或ECLIPSE，MySQL5.7，MAVEN3.3.9
+
+运行方式：
+1、将项目导进eclipse中
+2、右击项目在出现的列表中的Properties,在出现的设置中点击Deployment Assembly进入Web eployment Assembly
+3、然后点击Add，进入Select Directive Type，选中Maven Dependencies,点击finish，将其加到Source中
+4、右击项目在出现的列表中的Build Path，点击Config Build Path中，移除出错的jre，修改成自己的jre
+5.将项目加进tomcat运行即可，访问http://localhost:8080/jk/home.action，进登录界面，无需密码，直接点击登录进去
+
